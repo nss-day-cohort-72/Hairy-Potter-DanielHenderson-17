@@ -9,11 +9,11 @@ let plate = makePottery('Plate', 5, 7);
 let bowl = makePottery('Bowl', 2, 4);
 let vase = makePottery('Vase', 3, 10);
 let cup = makePottery('Cup', 1, 2);
-console.log(pottery1);
-console.log(pottery2);
-console.log(pottery3);
-console.log(pottery4);
-console.log(pottery5);
+console.log(mug);
+console.log(plate);
+console.log(bowl);
+console.log(vase);
+console.log(cup);
 
 
 // Fire each piece of pottery in the kiln
