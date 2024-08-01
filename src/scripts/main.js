@@ -43,6 +43,9 @@ console.log(sellPlate);
 console.log(sellBowl);
 console.log(sellVase);
 console.log(sellCup);
-console.log("This is usePottery()" + usePottery())
+// console.log("This is usePottery()" + usePottery())
 
 // Invoke the component function that renders the HTML list
+const potteryHTML = PotteryList();
+const potteryListElement = document.querySelector('.potteryList');
+potteryListElement.innerHTML = potteryHTML;
