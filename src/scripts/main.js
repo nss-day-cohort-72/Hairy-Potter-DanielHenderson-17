@@ -1,6 +1,8 @@
 // Imports go first
 import { makePottery } from "./PotteryWheel.js"
 import { firePottery } from './Kiln.js';
+import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js";
+import { PotteryList } from './PotteryList.js';
 
 
 
@@ -31,7 +33,16 @@ const firedCup = firePottery(cup, 2500); //Intentionally too high per instructio
 
 
 // Determine which ones should be sold, and their price
-
+const sellMug = toSellOrNotToSell(firedMug);
+const sellPlate = toSellOrNotToSell(firedPlate);
+const sellBowl = toSellOrNotToSell(firedBowl);
+const sellVase = toSellOrNotToSell(firedVase);
+const sellCup = toSellOrNotToSell(firedCup);
+console.log(sellMug);
+console.log(sellPlate);
+console.log(sellBowl);
+console.log(sellVase);
+console.log(sellCup);
+console.log("This is usePottery()" + usePottery())
 
 // Invoke the component function that renders the HTML list
-
